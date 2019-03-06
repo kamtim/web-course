@@ -1,0 +1,186 @@
+@charset "UTF-8";
+body {
+  margin: 0; }
+
+.main img {
+  max-width: 100%; }
+
+input:focus, button:focus {
+  outline: none; }
+
+.header {
+  background-color: #fff;
+  margin-bottom: 15px; }
+  .header__phone {
+    color: #373737;
+    font-size: 22px;
+    margin-right: 10px; }
+    .header__phone:first-child {
+      border-right: 1px solid #cfcfd0;
+      padding-right: 12px; }
+
+.button {
+  background-color: #ff9d00;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 13px 22px; }
+  .button:hover {
+    background-color: #ffa71a;
+    cursor: pointer; }
+  .button__big {
+    vertical-align: middle; }
+  .button img {
+    vertical-align: middle;
+    margin-right: 5px; }
+
+.overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.4); }
+  .overlay .popup {
+    position: fixed;
+    left: 50%;
+    top: 100px;
+    width: 750px;
+    transform: translateX(-50%);
+    background-color: #fff; }
+    .overlay .popup-close {
+      position: absolute;
+      right: -20px;
+      top: -30px;
+      font-size: 35px;
+      color: #ffffff;
+      font-weight: 300;
+      cursor: pointer; }
+    .overlay .popup-title {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 24px;
+      text-transform: uppercase;
+      background-color: #ff9d00;
+      color: #ffffff;
+      font-size: 21px;
+      font-weight: 500;
+      line-height: 22px; }
+    .overlay .popup-form {
+      background: url(../img/modal-bcg.png) center no-repeat;
+      background-size: cover;
+      padding: 40px 85px;
+      color: #ffffff;
+      text-align: center; }
+      .overlay .popup-form__header {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 27px;
+        margin-bottom: 23px; }
+        .overlay .popup-form__header span {
+          font-size: 24px; }
+      .overlay .popup-form__input {
+        width: 365px;
+        height: 56px;
+        border-radius: 2px;
+        border: none;
+        margin-right: 16px;
+        color: #373737;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 42px;
+        padding-left: 18px;
+        padding-top: 21px;
+        padding-bottom: 21px; }
+      .overlay .popup-form__btn {
+        width: 180px;
+        height: 56px;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 22px; }
+      .overlay .popup-form__label {
+        display: block;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 30px;
+        margin-bottom: 17px; }
+      .overlay .popup-form__note {
+        margin-top: 9px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 30px; }
+
+.main {
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 77px;
+  background: #373737 url(../img/main-background.jpg) center no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  z-index: 1;
+  /* Затемнение главного фона*/ }
+  .main::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0; }
+  .main-text__title {
+    font-size: 41px;
+    font-weight: 700;
+    margin-bottom: 25px; }
+  .main-text__subtitle {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 30px; }
+  .main-text__form {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px 27px;
+    margin-bottom: 10px; }
+  .main__img {
+    margin-right: 30px;
+    position: relative; }
+    .main__img::before {
+      content: '';
+      position: absolute;
+      width: 390px;
+      height: 390px;
+      left: 50%;
+      margin-left: -195px;
+      border: 1px solid #ffffff;
+      border-radius: 50%;
+      z-index: -1; }
+
+.form {
+  display: flex; }
+  .form-title {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    padding-right: 87px;
+    margin-bottom: 20px; }
+    .form-title__important {
+      font-weight: 700;
+      text-transform: uppercase; }
+  .form__input {
+    margin-right: 10px;
+    padding: 20px;
+    border-radius: 4px;
+    border: none;
+    vertical-align: middle;
+    flex-basis: 50%; }
+  .form-small {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px; }
+
+body {
+  font-family: Roboto;
+  margin-top: 59px; }

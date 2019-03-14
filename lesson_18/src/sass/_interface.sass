@@ -1,0 +1,40 @@
+.button
+	background-color: $active-color
+	border: none
+	border-radius: 6px
+	color: $text-color-light
+	font-size: 14px
+	padding: 13px 22px
+	&:hover
+	 background-color: lighten($active-color, 5)
+	 cursor: pointer
+	&__big
+	 vertical-align: middle
+	//  padding-top: 15px
+	//  padding-bottom: 15px
+	img
+	 vertical-align: middle
+	 margin-right: 5px
+	&-o
+	 background-color: transparent
+	 color: #9b9b9b
+	 border: 1px solid #9b9b9b
+	 &:hover
+		 background-color: lighten($active-color, 5)
+		 cursor: pointer
+		 color: $text-color-light
+
+.section
+	&-title
+	 font-size: 27px
+	 font-weight: 700
+	 line-height: 18px
+	 text-transform: uppercase
+	 text-align: center
+	 margin-bottom: 39px
+	 &::after
+	  margin-top: 12px
+	  content: ''
+	  display: block
+	  height: 6px
+	  background: url(../img/line.png) center no-repeat

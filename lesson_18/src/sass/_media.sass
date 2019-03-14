@@ -1,0 +1,93 @@
+@media (max-width: 576px)
+ .hidden-mobile
+ 	display: none
+ .header
+  margin-top: 10px
+  &__logo
+   background: $active-color url("../img/header-logo-mobile.png") center no-repeat
+			height: 35px
+			width: 35px
+			border-radius: 4px
+		&__phone
+		 font-size: 14px
+		 font-weight: 400
+		 line-height: 17px
+		 margin-right: 0
+		 &:first-child
+		  border-right: none
+		 &s
+		  display: flex
+		  flex-direction: column
+		&__button
+		 padding: 9px 9px
+	.main
+	 text-align: center
+	 padding-top: 20px
+	 &-text
+	  &__title
+		  line-height: 29px
+		  font-size: 22px
+		  color: $active-color
+		  margin-bottom: 10px
+		 &__subtitle
+		  font-size: 18px
+		  font-weight: 400
+		  margin-bottom: 40px
+			&__form
+			 background-color: transparent
+			 padding: 0
+	.form
+	 display: block
+	 padding: 0
+	 &-title
+	  padding: 0
+	  font-size: 15px
+	  font-weight: 300
+	  line-height: 18px
+	 &__input
+	  display: block
+	  margin: auto
+	  margin-bottom: 13px
+
+	.numbers
+	 &-block
+	  min-width: 100%
+
+	.feature
+	  &-block
+	   flex-basis: 80%
+	   &__img
+	    flex-basis: 30%
+
+
+@media (min-width: 576px) and (max-width: 992px)
+ .header
+   &__phone
+    margin-right: 0
+    &:first-child
+     border-right: none
+    &s
+     display: flex
+     flex-direction: column
+   &__button
+		  padding: 15px 15px
+		  margin-left: -20px
+	.main
+	 text-align: center
+	.hidden-md
+		display: none
+	.feature
+	  &-block
+	   flex-basis: 45%
+	   &__img
+	    flex-basis: 30%
+
+@media (max-width: 1200px)
+ .main
+  &__img
+   &::before
+    display: none
+
+
+
+	

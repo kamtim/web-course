@@ -266,11 +266,18 @@ input:focus, button:focus {
   margin-top: 57px;
   margin-bottom: 73px;
   text-align: center;
-  vertical-align: middle; }
+  vertical-align: middle;
+  max-width: 100%; }
+  .products-blocks {
+    max-width: 100%;
+    margin-right: 0;
+    margin-left: 0; }
   .products-block {
     margin-bottom: 51px; }
     .products-block__img {
       margin-bottom: 19px; }
+      .products-block__img img {
+        max-width: 100%; }
     .products-block__title {
       font-size: 20px;
       font-weight: 700;
@@ -300,7 +307,8 @@ input:focus, button:focus {
         display: flex;
         flex-direction: column; }
     .header__button {
-      padding: 9px 9px; }
+      padding: 9px 9px;
+      margin-right: 10px; }
   .main {
     text-align: center;
     padding-top: 20px; }
@@ -334,6 +342,15 @@ input:focus, button:focus {
     flex-basis: 80%; }
     .feature-block__img {
       flex-basis: 30%; } }
+
+@media (max-width: 768px) {
+  .products-block {
+    padding-right: 0px; }
+  .popup {
+    max-width: 80%; }
+    .popup-form input {
+      max-width: 100%;
+      margin-bottom: 15px; } }
 
 @media (min-width: 576px) and (max-width: 992px) {
   .header__phone {

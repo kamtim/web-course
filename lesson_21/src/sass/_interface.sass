@@ -1,0 +1,85 @@
+.button
+	background-color: $active-color
+	border: none
+	border-radius: 6px
+	color: $text-color-light
+	font-size: 14px
+	padding: 13px 22px
+	&:hover
+	 background-color: lighten($active-color, 5)
+	 cursor: pointer
+	&__big
+	 vertical-align: middle
+	//  padding-top: 15px
+	//  padding-bottom: 15px
+	img
+	 vertical-align: middle
+	 margin-right: 5px
+	&-o
+	 background-color: transparent
+	 color: #9b9b9b
+	 border: 1px solid #9b9b9b
+	 &:hover
+		 background-color: lighten($active-color, 5)
+		 cursor: pointer
+		 color: $text-color-light
+
+.section
+	&-title
+	 font-size: 27px
+	 font-weight: 700
+	 line-height: 24px
+	 text-transform: uppercase
+	 text-align: center
+	 margin-bottom: 39px
+	 &::after
+	  margin-top: 12px
+	  content: ''
+	  display: block
+	  height: 6px
+	  background: url(../img/line.png) center no-repeat
+
+.slider-arrow
+	position: absolute
+	top: 0
+	height: 100%
+	width: 22px
+	z-index: 99
+	&_prod
+	 border: 1px solid $active-color
+	 margin-right: 10px
+	 margin-left: 10px
+	&:hover
+	 cursor: pointer
+	&_right
+	 background: #fff url(../img/production/arrow_right.png) center no-repeat
+	 right: 0
+	 &:hover
+	  background: $active-color url(../img/production/arrow-active_right.png) center no-repeat
+	&_left
+	 background: #fff url(../img/production/arrow_left.png) center no-repeat
+	 left: 0
+	 &:hover
+	  background: $active-color url(../img/production/arrow-active_left.png) center no-repeat
+
+.slick-slide
+	outline: none
+
+.row
+	min-width: 100%
+
+.dark-bg
+ z-index: 1
+ text-align: center
+ position: relative
+ /* Затемнение главного фона*/
+ &::before
+  content: ''
+  display: block
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0,0,0,0.6)
+  z-index: -1

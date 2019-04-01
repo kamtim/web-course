@@ -1,0 +1,175 @@
+@media (max-width: 576px)
+ .hidden-mobile
+ 	display: none
+ .header
+  margin-top: 10px
+  &__logo
+   background: $active-color url("../img/header-logo-mobile.png") center no-repeat
+			height: 35px
+			width: 35px
+			border-radius: 4px
+		&__phone
+		 font-size: 14px
+		 font-weight: 400
+		 line-height: 17px
+		 margin-right: 0
+		 &:first-child
+		  border-right: none
+		 &s
+		  display: flex
+		  flex-direction: column
+		&__button
+		 padding: 9px 9px
+		 margin-right: 10px
+	.main
+	 text-align: center
+	 padding-top: 20px
+	 &-text
+	  &__title
+		  line-height: 29px
+		  font-size: 22px
+		  color: $active-color
+		  margin-bottom: 10px
+		 &__subtitle
+		  font-size: 18px
+		  font-weight: 400
+		  margin-bottom: 40px
+			&__form
+			 background-color: transparent
+			 padding: 0
+	.form
+	 display: block
+	 padding: 0
+	 &-title
+	  padding: 0
+	  font-size: 15px
+	  font-weight: 300
+	  line-height: 18px
+	 &__input
+	  display: block
+	  margin: auto
+	  margin-bottom: 13px
+	.numbers
+	 &-block
+	  min-width: 100%
+	.feature
+	  &-block
+	   flex-basis: 80%
+	   &__img
+	    flex-basis: 30%
+	.popup
+	 &-title
+	  font-size: 16px
+		&-form
+		 padding: 0 0
+		 padding-top: 20px
+		 &__header
+		  font-size: 25px
+		  span
+		   font-size: 20px
+	.production
+	 &-slider
+	  &_top
+	   height: inherit
+	  &_bottom
+	   width: 80%
+	   margin: auto
+	 &-text
+	  text-align: center
+	  &__title 
+	   font-size: 20px
+	   text-transform: uppercase
+	.clients 
+	 &__img
+	  flex-basis: 60%
+	.offer
+	 margin-bottom: 27px
+	 &-title
+	  font-size: 20px
+	  font-weight: 700
+	  line-height: 24px
+	  margin-bottom: 10px
+	  &_small
+	   font-size: 16px
+	   font-weight: 400
+	 &-form
+	  &__label
+	   font-size: 14px
+	   font-weight: 300
+	   line-height: 30px
+	  &__input
+	   margin-bottom: 0px
+
+
+@media (min-width: 576px) and (max-width: 768px)
+ .header
+  margin-top: -40px
+ .products-block
+  padding-right: 0px
+ .popup
+  max-width: 80%
+  &-form
+   input
+    max-width: 100%
+    margin-bottom: 15px
+	.production
+	 &-text
+	  &__desc
+	   font-size: 13px
+	   line-height: 15px
+	  &__title
+	   font-size: 30px
+	  &__desc
+	   font-size: 20px
+	   line-height: 25px
+
+@media (min-width: 576px) and (max-width: 768px)
+ .clients 
+  &__img
+   flex-basis: 45%
+
+@media (min-width: 768px) and (max-width: 992px)
+ .clients 
+	 &__img
+	  flex-basis: 30%
+
+@media (min-width: 992px)
+ .clients 
+	 &__img
+	  flex-basis: 21%
+
+
+@media (min-width: 576px) and (max-width: 992px)
+ .header
+   &__phone
+    margin-right: 0
+    &:first-child
+     border-right: none
+    &s
+     display: flex
+     flex-direction: column
+   &__button
+		  padding: 15px 15px
+		  margin-left: -20px
+	.main
+	 text-align: center
+	.hidden-md
+		display: none
+	.feature
+	  &-block
+	   flex-basis: 45%
+	   &__img
+	    flex-basis: 30%
+	.production-slider
+	 &_top
+	  height: inherit
+
+@media (max-width: 1200px)
+ .main
+  &__img
+   &::before
+    display: none
+
+
+
+	
